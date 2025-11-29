@@ -1,0 +1,9 @@
+slack project 
+1. chrome : slack login : via google mail id > Vvce : gruop name 
+2. launch Vvce : click on use slack in browser 
+3. craete a new channel > dumb 
+4. APPS : click on three dots : manage : browse apps 
+5. browse apps : click jenkins CI > open app > configure > add to slack > choose the channel u created > copy the secret text
+6. Back to jenkins:go to setting icon>click the system>go down where slack is present>Workspace:paste the vvce-ljz6447>Credential:click add symbol:new jenkins->Kind:secret text> for secret paste what you copies in browser app>give some id and description
+add credential what given as description> for Default channel / member id: give your channel name save and apply
+7.back to jenckins>add new item->freestyle and create> in Build Steps-> select Execute Windows batch command and type java --version > in Post-build Actions-> go to slack notification and select all>final apply and save>bulit now
