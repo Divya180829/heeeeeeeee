@@ -1,0 +1,17 @@
+A3:
+1. downloas java ; jdk 21 2 nd one for windws ; copy path : java \jdk21 to environment variable 
+2. download jenkins select start service 
+3. download python
+http://localhost:8080/
+admin
+password: jenkins.err file
+
+step 1 : settings : plugins : 1. github api plugin ; github branch source ; github plugin ; github groovy libraries ; integration plugin 
+step 2 : new item 
+         name freestyle 
+         SCM : create new repo and a file named aaa.py and select the repo url 
+         credential : add jenkins 
+        branch and build : */main
+        trigger : pool scm : h/2 * * * *
+        build step : executive batch command : aaa.py 
+        apply and save and build now 
